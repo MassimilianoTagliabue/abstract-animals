@@ -1,16 +1,20 @@
 package org.lessons.java.animal;
 
-public class Passerotto extends AbstractAnimal{
+public class Passerotto extends AbstractAnimal implements IVolante{
 
-    public Passerotto(String nome, float peso){
-        super(nome, peso);
-    }
-
+    
+    @Override
     public void verso(){
         System.out.println("cinguetta");
     }
 
+    @Override
     public void mangia(){
         System.out.println("semi");
+    }
+
+    @Override
+    public void vola(){
+        System.out.println("sto volando");
     }
 }

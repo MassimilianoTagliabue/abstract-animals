@@ -1,17 +1,21 @@
 package org.lessons.java.animal;
 
-public class Aquila extends AbstractAnimal{
+public class Aquila extends AbstractAnimal implements IVolante{
 
-    public Aquila(String nome, float peso){
-        super(nome, peso);
-    }
 
+    @Override
     public void verso(){
         System.out.println("stridio");
     }
 
+    @Override
     public void mangia(){
         System.out.println("carne");
+    }
+
+    @Override
+    public void vola(){
+        System.out.println("sto volando");
     }
 
 }
